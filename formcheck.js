@@ -22,22 +22,20 @@ btn.addEventListener("click",function(){
     else{
         document.getElementById("selid").innerHTML = ""
 }
-    let rad1 = document.getElementById("rad1");
-    let rad2 = document.getElementById("rad2");
-    let rad3 = document.getElementById("rad3");
-    if(rad1.checked == false && rad2.checked == false && rad3.checked == false){
-        document.getElementById("radid").innerHTML = "Please select your gender"
-    }
-    else{
-        document.getElementById("radid").innerHTML = ""
+    let mail = document.getElementById("mail");
+if (mail.value === ''){
+    document.getElementById("mailid").innerHTML = "please enter proper domain"
 }
-    let che1 = document.getElementById("che1");
-    let che2 = document.getElementById("che2");
-    let che3 = document.getElementById("che3");
-    if(che1.checked == true || che2.checked == true || che3.checked == true){
-        document.getElementById("cheid").innerHTML = ""
-    }
-    else{
-       document.getElementById("cheid").innerHTML = "Please choose your interests" 
-    }
+else{
+    document.getElementById("mailid").innerHTML = ""
+}
+let phone = document.getElementById("phone");
+if(phone.value === ''){
+    let t=document.getElementById("phoneid");
+    document.getElementById("phoneid").innerHTML = "Please enter vaild phone number"
+}
+else{
+    document.getElementById("phoneid").innerHTML = ""
+}
+
 })
